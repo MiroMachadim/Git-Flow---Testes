@@ -19,11 +19,11 @@ function cpfValido(cpf) {
 }
 function formulario() {
   let form = document.getElementById("formulario");
-  if (!senhaValida(form[1])) {
+  if (!senhaValida(form[1].value)) {
     alert("senha invalidá!");
-  } else if (!cpfValido(form[2])) {
+  } else if (!cpfValido(form[2].value)) {
     alert("cpf inválido! Use apenas digitos");
-  } else if (!senhaValida(form[3])) {
+  } else if (!senhaValida(form[3].value)) {
     alert("nome inválido!");
   } else alert("Cadastrado com sucesso!");
 }
