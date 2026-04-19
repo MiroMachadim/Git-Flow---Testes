@@ -3,27 +3,28 @@
     <head>
         <meta charset="UTF-8" />
         <title>Cadastro</title>
-        <link rel="stylesheet" href="./style.css"
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <div class="conteiner">
-            <form action="@">
+            <form id="formulario" action="">
                 <div class="titulo">
                     <h1>Faça seu cadastro!</h1>
                 </div>
-                <br>
+                <br />
                 <label for="email">Digite seu email:</label>
-                <br>
+                <br />
                 <input
                     id="email"
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="email:"
                     required
                 />
-                <br>
+                <br />
                 <label for="senha">Digite sua senha:</label>
-                <br>
+                <br />
                 <input
                     id="senha"
                     type="password"
@@ -31,9 +32,9 @@
                     placeholder="senha:"
                     required
                 />
-                <br>
+                <br />
                 <label for="cpf">Seu cpf:</label>
-                <br>
+                <br />
                 <input
                     id="cpf"
                     type="text"
@@ -41,9 +42,9 @@
                     placeholder="cpf:"
                     required
                 />
-                <br>
+                <br />
                 <label for="nome">Seu nome de usuário:</label>
-                <br>
+                <br />
                 <input
                     id="nome"
                     type="text"
@@ -51,9 +52,15 @@
                     placeholder="nome:"
                     required
                 />
-                <br>
-                <input class="botao" type="submit" value="enviar" />
+                <br />
+                <input
+                    class="botao"
+                    type="submit"
+                    value="enviar"
+                    onclick="formulario()"
+                />
             </form>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
